@@ -21,7 +21,7 @@ with open(csv_filename, 'w', newline='') as csv_file:
 data = []
 with open(csv_filename, 'r', newline='') as csv_file:
     csv_reader = csv.DictReader(csv_file)
-    for row in csv_reader:
+    for row in csv_reader:        
         data.append(row)
 
 # transforma os dados do csv para um formato mais aceitavel do json
